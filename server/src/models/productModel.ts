@@ -13,7 +13,7 @@ export interface ProductModel extends Document {
     brand: string
     category: string
     description: string
-    reviews: ReviewModel[]
+    reviews?: ReviewModel[]
     rating: number
     numReviews: number
     price: number

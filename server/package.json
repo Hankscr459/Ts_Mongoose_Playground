@@ -5,7 +5,9 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon dist/app.js"
+    "start": "nodemon dist/app.js",
+    "data:import": "node dist/seeder.js",
+    "data:destory": "node dist/seeder.js -d"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +15,7 @@
   "dependencies": {
     "@types/colors": "^1.2.1",
     "@types/dotenv": "^8.2.0",
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
     "colors": "^1.4.0",
     "dotenv": "^8.2.0",
@@ -21,6 +24,7 @@
     "ts-node": "^9.1.1"
   },
   "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
     "@types/express": "^4.17.11",
     "@types/node": "^14.14.22",
     "nodemon": "^2.0.7"

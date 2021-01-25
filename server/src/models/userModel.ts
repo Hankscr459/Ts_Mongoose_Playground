@@ -1,19 +1,13 @@
 import { Schema, model, Document } from 'mongoose'
 
 export interface UserModel extends Document {
-    user: string
     name: string
     email: string
     password: string
-    isAdmin: boolean
+    isAdmin?: boolean
 }
 
 const userSchema = new Schema({
-    user: {
-        type: Schema.Types.ObjectId,
-        required: true,
-        ref: 'User'
-    },
     name: {
         type: String,
         required: true,
